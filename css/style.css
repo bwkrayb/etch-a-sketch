@@ -29,14 +29,14 @@ div[class^="row"] {
 }
 
 .block {
-  /* width:15px;
-  height:15px; */
   margin:0px;
   background-color: red;
   display: inline-block;
+  transition: ease-in;
+  transition: ease-out 1s;
 }
 
 .block:hover {
-  background-color: blue;
+  /* background-color: blue; */
 }
 
