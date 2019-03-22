@@ -1,7 +1,7 @@
 let gridCount = 16;
 let size = 500 / gridCount;
 let sizepx = size + 'px';
-let color1 = 'red';
+let color1 = 'blue';
 let color2 = 'green';
 const container = document.querySelector('#grid-container');
 

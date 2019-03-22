@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: lightgrey;
 }
 
 #grid-container {
@@ -30,7 +31,7 @@ div[class^="row"] {
 
 .block {
   margin:0px;
-  background-color: red;
+  /* background-color: red; */
   display: inline-block;
   transition: ease-in;
   transition: ease-out 1s;
