@@ -1,11 +1,29 @@
+body {
+  margin:0;
+}
+
+#grid-container {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+div[class^="row"] {
+  width: fit-content;
+  height:15px;
+  display:block;
+  align-items: center;
+}
+
 .block {
-  width:10px;
-  height:10px;
-  margin:5px;
+  width:15px;
+  height:15px;
+  margin:0px;
   background-color: red;
   display: inline-block;
 }
 
-.row {
-  
+.block:hover {
+  background-color: blue;
 }
+
