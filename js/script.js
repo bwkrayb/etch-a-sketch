@@ -1,8 +1,5 @@
-let gridCount;
+let gridCount = 16;
 const container = document.querySelector('#grid-container');
-
-
-
 
 function createGrid(num) {
   for (i = 0; i < num; i++) {
@@ -10,22 +7,17 @@ function createGrid(num) {
   };
 };
 
-
-
-
 function createRow(num) {
-  const row = document.createElement('div');
+  const newRow = document.createElement('div');
   const nextLine = document.createElement('br');
-  container.appendChild(row);
-  row.classList.add('row')
-  gridCount = num;
-  for (i = 0; i < num; i++){
+  container.appendChild(newRow);
+  newRow.classList.add('row');
+  for (a = 0; a < gridCount; a++){
     createOne();
   };
-  container.appendChild(nextLine);
+  newRow.classList.remove('row');
+  newRow.classList.add('row' + num);
 };
-
-
 
 function createOne() {
   const row = document.querySelector('.row');
@@ -35,6 +27,16 @@ function createOne() {
   
 };
 
-createRow(20);
+createGrid(gridCount);
 
-createRow(10);
+function changeGridSize() {
+  gridCount = prompt();
+  clearGrid();
+  createGrid(gridCount);
+};
+
+function clearGrid() {
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+}
